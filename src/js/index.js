@@ -23,7 +23,7 @@ form.addEventListener('submit', event => {
     .then(images => {
       if (images.totalHits == 0) {
         return Notiflix.Notify.failure(
-          'Sorry, there are no images matching your search query. Please try again.'
+          'Sorry, there are no images matching your search query.Please try again.'
         );
       }
       Notiflix.Notify.success(`Hooray we found ${images.totalHits} images`);
